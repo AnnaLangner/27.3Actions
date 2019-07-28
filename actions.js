@@ -17,28 +17,28 @@ function createComment(text) {
 function editComment(text) {
     return {
         type: EDIT_COMMENT,
-        text,
-        id: uuid.v4()
+        id,
+        text
     }
 }
 
 function removeComment(text) {
     return {
         type: REMOVE_COMMENT,
-        id: uuid.v4()
+        id
     }
 }
 
 function thumbUpComment(text) {
     return {
         type: THUMB_UP_COMMENT,
-        id: uuid.v4()
+        id
     }
 }
 
 function thumbDownComment(text) {
     return {
         type: THUMB_DOWN_COMMENT,
-        id: uuid.v4()
+        id
     }
 }
