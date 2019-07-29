@@ -14,7 +14,7 @@ function createComment(text) {
     }
 }
 
-function editComment(text) {
+function editComment(text, id) {
     return {
         type: EDIT_COMMENT,
         id,
@@ -22,21 +22,21 @@ function editComment(text) {
     }
 }
 
-function removeComment(text) {
+function removeComment(text, id) {
     return {
         type: REMOVE_COMMENT,
         id
     }
 }
 
-function thumbUpComment(text) {
+function thumbUpComment(text, id) {
     return {
         type: THUMB_UP_COMMENT,
         id
     }
 }
 
-function thumbDownComment(text) {
+function thumbDownComment(text, id) {
     return {
         type: THUMB_DOWN_COMMENT,
         id
