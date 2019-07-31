@@ -5,13 +5,4 @@ const app = combineReducers({
     comments
 });
 
-const initialState = {
-    comments: [],
-    users: []
-};
-
-function app(state = initialState, action) {
-    return {
-        comments: comments(state.comments, action)
-    };
-}
+export default app;
